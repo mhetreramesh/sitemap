@@ -1,7 +1,7 @@
 {
-    "name": "gliterd/php-sitemap-reader",
+    "name": "gliterd/sitemap",
     "type": "library",
-    "description": "Website sitemap reader in php",
+    "description": "Website sitemap operations in php",
     "keywords": ["sitemap", "sitemap-reader", "xml-reader"],
     "homepage": "https://github.com/gliterd/php-sitemap-reader",
     "license": "MIT",
