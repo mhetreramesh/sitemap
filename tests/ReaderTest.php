@@ -4,11 +4,24 @@ use Sitemap\Reader;
 
 class ReaderTest extends PHPUnit_Framework_TestCase
 {
-    private $fileMock;
+    private $reader;
 
-    public function readWithProperUrl()
+    protected function setUp()
     {
-        $reader = new Reader();
-        $reader->read('http://deskoffer.com/sitemap.xml');
+        $this->reader = new Reader();
+    }
+
+    private function getMockSimpleXmlElement()
+    {
+        $mock = $this
+            ->getMockBuilder('Traversable')
+            ->getMock();
+        return $mock;
+    }
+
+    public function testRead()
+    {
+        $reader = $this->getMockSimpleXmlElement();
+        //$this->reader->read('sitemap.xml');
     }
 }
