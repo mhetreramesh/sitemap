@@ -22,7 +22,12 @@ $ composer require gliterd/sitemap
 ``` php
 use Sitemap\Reader;
 
-$sitemapUrls = new Reader('http://xyz.com/sitemap.xml');
+$reader = new Reader('http://yourwebsite.com/sitemap.xml');
+
+$sitemapUrls = $reader->read();
+
+$sitemapUrls = $reader->read('http://anotherwebsite.com/sitemap.xml');
+
 ```
 
 
